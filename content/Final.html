@@ -141,12 +141,7 @@ img.add_border {
         </header>
     <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='Exam.html'>Next</a> >> Exam<br /><h1>Final</h1>
 <p>yt final video <a href="https://www.youtube.com/watch?v=8zrI9pglv38&amp;ab_channel=%E4%BA%A6%E5%BE%B7%E6%B1%9F">https://www.youtube.com/watch?v=8zrI9pglv38&amp;ab_channel=%E4%BA%A6%E5%BE%B7%E6%B1%9F</a></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p><span></span></p>
+<p>在做butter的時候出了點問題跑不出來，但後來發現是在使用button代號名稱裡不能有空格，不然跑不出來。</p>
 <p></p>
 <!-- 導入 brython 程式庫 -->
 <script src="./../cmsimde/static/brython.js"></script>
@@ -196,7 +191,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/40923129/aef55d094ec6558c419fd25482fa4a1d/raw/6221acc73db854537f8c1fcd50ecbd1a9e155071/final"
+        url = "https://gist.githubusercontent.com/40923114/5de9606edad7a4112443952cf0b941cc/raw/57cb3be5f006f8d50f177c9e97eb8ac4f1078872/final%25201"
     prog = open(url).read()
 
     # 將程式載入在最剛開始的編輯區
@@ -223,49 +218,29 @@ run()
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/a40923146/f8b41744f92667da5ca8d16d75dc3431/raw/cbbb5443f2e3c5f1f86290f858b8be0724d42061/cp2021_hw1"
+url = "https://gist.githubusercontent.com/40923114/206502688cdd6b2adab32e02cf2068c0/raw/a519ad0bec890469882ec1ff85a4c5b5a37e8872/snake%2520auto"
 src = open(url).read()
-hw1_1 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
-document["hw1_1"].bind("click", hw1_1.prog)
+snakeauto = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["snakeauto"].bind("click", snakeauto.prog)
 </script>
 </p>
 <p>
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/40923129/df69d2f88ec8a712d89286f83a9d8a31/raw/c8fb940d3267ef9c97b9471a2c684969cbc3c097/hw-1-2"
+url = "https://gist.githubusercontent.com/40923114/dfb47d2d9e7072a335c6824efe61faee/raw/dad8a92c06436ef919495a901b28a281c0c9a8f2/1216"
 src = open(url).read()
-hw1_2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
-document["hw1_2"].bind("click", hw1_2.prog)
-</script>
-</p>
-<p>
-<script type="text/python3">
-import beditor
-from browser import document
-url = "https://gist.githubusercontent.com/40923129/5c5483c0812d64de82fb29373616a265/raw/0b8e78608ae86a6c8ce6ae8d3a2986d847d648e0/snake2"
-src = open(url).read()
-snake = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
-document["snake"].bind("click", snake.prog)
-</script>
-</p>
-<p>
-<script type="text/python3">
-import beditor
-from browser import document
-url = "https://gist.githubusercontent.com/40923129/972f510bce12c851c841a67d54e921e3/raw/af34bcd0b621c80bd3eec6d432e7c812e0b101cd/exam"
-src = open(url).read()
-exam = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
-document["exam"].bind("click",exam.prog)
+onetoten = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["onetoten"].bind("click",onetoten.prog)
 </script>
 </p>
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/40923129/aef55d094ec6558c419fd25482fa4a1d/raw/de8a9108fe62d9d34ac689b312bf3d9396253a76/final"
+url = "https://gist.githubusercontent.com/40923114/5de9606edad7a4112443952cf0b941cc/raw/57cb3be5f006f8d50f177c9e97eb8ac4f1078872/final%25201"
 src = open(url).read()
-final = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
-document["final"].bind("click",final.prog)
+final2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["final2"].bind("click",final2.prog)
 </script>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor" style="width: 600px; height: 300px;"></div>
@@ -276,7 +251,7 @@ document["final"].bind("click",final.prog)
 <p></p>
 <p><!-- 執行與清除按鈕開始 --></p>
 <p><button id="kw_run">Run</button> <button id="kw_show_console">Output</button> <button id="kw_clear_console">清除輸出區</button><button id="clear_bd">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
-<p><button id="hw1_1">hw1-1</button><button id="hw1_2">hw1-2</button><button id="exam">1add10</button><button id="snake">snake</button> <button id="final">final1and2</button></p>
+<p><button id="onetoten">1to10</button><button id="snakeauto">snakeauto</button> <button id="final2">final2</button></p>
 <p></p>
 <p><!-- 執行與清除按鈕結束 --></p>
 <p></p>
